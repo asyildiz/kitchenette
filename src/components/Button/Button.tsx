@@ -5,12 +5,13 @@ import './Button.scss';
 interface ButtonProps {
   label?: string;
   disabled?: boolean;
+  extraClass?: string;
   type?: 'primary' | 'secondary' | 'success' | 'danger' | 'warning' | 'info' | 'dark' | 'link';
   fullWidth?: boolean;
 }
 
 const Button = (props: ButtonProps) => {
-    let buttonClass = classNames(props.type, { 'disabled': props.disabled, 'full-width': props.fullWidth });
+    let buttonClass = classNames('kn-button', props.type, { 'disabled': props.disabled, 'full-width': props.fullWidth }, props.extraClass);
 
     return <button className={buttonClass} disabled={props.disabled}>{props.label}</button>
 }

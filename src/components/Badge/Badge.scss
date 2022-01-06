@@ -1,0 +1,22 @@
+@import "../../colors.scss";
+
+.kn-badge {
+  display: inline-block;
+  border-radius: 1em;
+  font-size: 12px;
+  line-height: 12px;
+  color: $color-white;
+  padding: 4px 12px;
+  margin-right: 10px;
+  vertical-align: top;
+
+  &.primary {
+    background-color: $color-primary;
+  }
+
+  &.secondary {
+    border: 1px solid $color-primary;
+    background-color: $color-white;
+    color: $color-primary;
+  }
+}
