@@ -1,9 +1,63 @@
+@import "../../colors.scss";
+
 button {
+    border: 1px solid transparent;
+    border-radius: 0.30rem;
+    cursor: pointer;
+    color: $color-white;
+    display: inline-block;
+    height: 32px;
+    text-align: center;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+
+    &[disabled] {
+        cursor: auto;
+        opacity: .50;
+    }
+
+    &.primary {
+        background-color: $color-primary;
+
+    }
+
+    &.secondary {
+        border: 1px solid $color-primary;
+        background-color: $color-white;
+        color: $color-primary;
+    }
+
     &.success {
-        background-color: #29cc81;
+        background-color: $color-success;
+
     }
 
     &.danger {
-        background-color: #ab003c;
+        background-color: $color-danger;
+
+    }
+
+    &.warning {
+        background-color: $color-warning;
+    }
+
+    &.info {
+        background-color: $color-info;
+    }
+
+    &.dark {
+        background-color: $color-dark;
+    }
+
+    &.link {
+        background-color: transparent;
+        color: $color-primary;
+        text-decoration: underline;
+    }
+
+    &.full-width {
+        display: block;
+        width: 100%;
     }
 }

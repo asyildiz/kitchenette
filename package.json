@@ -1,6 +1,6 @@
 {
   "name": "@asyildiz/kitchenette",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A react component library.",
   "scripts": {
     "rollup": "rollup -c",
@@ -52,5 +52,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/asyildiz"
   },
-  "dependencies": {}
+  "dependencies": {
+    "classnames": "^2.3.1"
+  }
 }
