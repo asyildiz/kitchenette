@@ -5,6 +5,7 @@
   "scripts": {
     "rollup": "rollup -c",
     "test": "jest",
+    "start": "yarn storybook",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
